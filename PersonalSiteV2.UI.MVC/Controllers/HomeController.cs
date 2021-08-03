@@ -11,6 +11,12 @@ namespace PersonalSiteV2.UI.MVC.Controllers
         }
 
         [HttpGet]
+        public ActionResult Landing()
+        {
+            return View();
+        }
+
+        [HttpGet]
         [Authorize]
         public ActionResult About()
         {
